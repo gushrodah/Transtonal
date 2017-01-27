@@ -1,0 +1,7 @@
+1) Beatport
+	- read from scriptable object
+	- hitting notes	: player and boss
+
+
+
+LETS CREATE A QUALITY MUSIC ANALYZER SO THAT YOU CAN USE IT LATER
