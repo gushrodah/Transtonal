@@ -70,15 +70,10 @@ public class MusicAnalyzer : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             float hitOff = (float)(nextTick - (sample + dataCount));
-            if (hitOff < BEATOFFSET)
+            if (hitOff < BEATOFFSET || nextTick - sample + dataCount > 75000)
             {
-                //Debug.Log("hit under:"+ hitOff);
+                Debug.Log("hit ");
             }
-            else if (sample + dataCount > nextTick - BEATOFFSET)
-            {
-                Debug.Log("hit over:"+ ((nextTick - BEATOFFSET) - (sample + dataCount)));
-            }
-            Debug.Log((nextTick - BEATOFFSET) +"-"+(sample + dataCount)+ "="+ (nextTick - BEATOFFSET -sample + dataCount));
         }
     }
 }
